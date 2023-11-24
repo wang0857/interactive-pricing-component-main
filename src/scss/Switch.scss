@@ -1,0 +1,39 @@
+@import './_variables.scss';
+
+.calculator-plan {
+    &-switch {
+        margin: 0px $md;
+        width: 42px;
+        height: 22px;
+        border-radius: 50px;
+        background-color: $blue-switch-bg;
+        position: relative;
+        transition: $transition;
+
+        &-ball {
+            height: $md;
+            width: $md;
+            border-radius: 50px;
+            background-color: $white;
+            position: absolute;
+            top: 3.5px;
+            left: 4px;
+            transition: $transition;
+
+            &.active {
+                left: 23px;
+            }
+        }
+
+        &:hover {
+            cursor: pointer;
+            background-color: $cyan-bar;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .calculator-plan-switch {
+        margin: 0px $sm;
+    }
+}

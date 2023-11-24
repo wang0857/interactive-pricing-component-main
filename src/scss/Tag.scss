@@ -1,0 +1,28 @@
+@import './_variables.scss';
+
+.calculator-plan-tag {
+    position: absolute;
+    top: 0px;
+    padding: 4px 6px;
+    background-color: $red-discount-bg;
+    color: $red-discount-text;
+    font-size: 0.7em;
+    border-radius: $md;
+    margin-left: $sm;
+    white-space: nowrap;
+    
+    &::after {
+        content: "25% discount";
+        font-weight: $extraBold;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .calculator-plan-tag {
+        margin-left: $xs;
+
+        &::after {
+            content: "-25%";
+        }
+    }
+}

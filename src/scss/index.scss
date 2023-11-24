@@ -1,0 +1,45 @@
+/* Overall Setting */
+@import './_variables.scss';
+
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap');
+
+body {
+  margin: 0px;
+  padding: 0px;
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  // align-items: center;
+  background-image: url('../assets/bg-pattern.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-color: $blue-background;
+
+  & > * {
+    font-family: 'Manrope', sans-serif;
+    font-size: 15px;
+    color: $blue-text;
+    font-weight: $semiBold;
+  }
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0px;
+}
+
+
+@media screen and (max-width: 768px) {
+  body {
+    background-size: initial;
+    background-position: top left;
+  }
+
+  #root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

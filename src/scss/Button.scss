@@ -1,0 +1,19 @@
+@import './_variables.scss';
+
+
+.calculator-footer-btn {
+    button {
+        border-radius: 50px;
+        padding: $md 45px;
+        border: none;
+        background-color: $blue-btn-bg;
+        color: $blue-btn-text;
+        transition: $transition;
+        font-size: 1em;
+
+        &:hover {
+            color: $white;
+            cursor: pointer;
+        }
+    }
+}
